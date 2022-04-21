@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{7577BD2E-B323-4CB9-9CBF-34B658BCA37E}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/NoteBodyRequest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Models/NoteHeaderUpdateRequest.cs">
     <Files>
       <File FileName="Startup.cs" Line="26" Column="48" />
       <File FileName="Data/NoteDBContext.cs" Line="4" Column="32" />
       <File FileName="Models/LogEntry.cs" Line="9" Column="43" />
       <File FileName="appsettings.json" />
-      <File FileName="Controllers/MainController.cs" Line="62" Column="1" />
+      <File FileName="Controllers/MainController.cs" Line="82" Column="53" />
       <File FileName="Models/LogEntryModel.cs" Line="5" Column="6" />
       <File FileName="Models/ArchiveRequest.cs" Line="9" Column="1" />
       <File FileName="Dockerfile" />
-      <File FileName="Models/NoteBodyRequest.cs" Line="6" Column="23" />
+      <File FileName="Models/NoteBodyRequest.cs" Line="1" Column="1" />
+      <File FileName="Models/NoteHeaderUpdateRequest.cs" Line="6" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +21,7 @@
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True">
-                <Node name="NoteBodyRequest.cs" selected="True" />
+                <Node name="NoteHeaderUpdateRequest.cs" selected="True" />
               </Node>
             </Node>
           </Node>

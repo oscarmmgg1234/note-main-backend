@@ -71,5 +71,21 @@ namespace note_main_backend.Controllers
 
         }
 
+        [HttpPost, Route("Update/Header")]
+        public IActionResult NoteHeaderUpdate([FromBody] NoteHeaderUpdateRequest model)
+        {
+
+            using (var context = new NoteDBContext(_config))
+            {
+                var logEntry = context.Logs.First(x => x.ID == model.ID && x.NoteID == model.NoteID);
+
+                logEntry.Note_Header = model.Note_Header;
+
+                return Ok(context.SaveChanges());
+            }
+
+        }
+
+
     }
 }
