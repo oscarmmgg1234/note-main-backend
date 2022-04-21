@@ -11,7 +11,7 @@ using note_main_backend.Data;
 
 namespace note_main_backend.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("Api/[controller]")]
     public class MainController : ControllerBase
     {
         IConfiguration _config;
@@ -84,6 +84,17 @@ namespace note_main_backend.Controllers
                 return Ok(context.SaveChanges());
             }
 
+        }
+
+        [HttpPost, Route("Get/Post")]
+        public IEnumerable<LogEntry> GetLogEntries([FromBody] LogEntryRequest model)
+        {
+            using(var context = new NoteDBContext(_config))
+            {
+                var result = context.Logs.Where(x => x.ID == model.ID && x.Is_Archived == false);
+
+                return result.ToList();
+            }
         }
 
 
